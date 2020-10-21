@@ -32,7 +32,7 @@
 	       - Remote directory: `//opt//docker`
 	       - Exec command: 
                 ```sh 
-                ansible-playbook -i /opt/docker/hosts /opt/docker/create-simple-devops-image.yml --limit localhost;
+                ansible-playbook -i /opt/docker/hosts /opt/docker/devops-image.yml --limit localhost;
                 ```
 
 Save and run the job.
@@ -49,7 +49,7 @@ Save and run the job.
       - *SSH Publishers*  
 	       - Exec command: 
                 ```sh 
-                ansible-playbook -i /opt/docker/hosts /opt/docker/kubernetes-valaxy-deployment.yml;
-                ansible-playbook -i /opt/docker/hosts /opt/docker/kubernetes-valaxy-service.yml;
+                ansible-playbook -i /opt/docker/hosts /opt/docker/kubernetes-deployment.yml;
+                ansible-playbook -i /opt/docker/hosts /opt/docker/kubernetes-service.yml;
                 ```
 Save and run the job.
